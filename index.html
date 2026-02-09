@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TO BE SUPERMACY</title>
+    <title>Nike Better World</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -52,25 +52,16 @@
         </div>
     </div>
 
-    <!-- PERBAIKAN: Kembali ke struktur overlay/popup seperti versi awal (lebih "menu-like" dan sederhana), tapi ukuran video lebih kecil dan proporsional (tidak terlalu besar seperti versi sebelumnya) -->
     <div class="overlay">
         <div class="popup">
             <div class="close-bar">
                 <div class="close-icon">
-                    <img src="images/rsz_close.png" width="40px" height="40px" alt="Close">
+                    <img src="images/rsz_close.png" width="30px" height="30px">
                 </div>
             </div>
-
-            <!-- Wrapper aspect ratio 16:9 tetap digunakan agar video proporsional, tapi popup dibuat lebih kecil (width 80vw, max-width 1000px, height otomatis via padding) -->
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; max-width: 1000px; margin: 0 auto; background: #000;">
-                <iframe 
-                    src="https://drive.google.com/file/d/1CJGwaloJk-NZmuaHa7CFG3m3E44DLc4H/preview"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-                    allowfullscreen
-                    allow="autoplay; fullscreen"
-                    title="Nike Video">
-                </iframe>
-            </div>
+            <video class="player" controls>
+                <source src="video/video.mkv">
+            </video>
         </div>
     </div>
 
@@ -363,6 +354,8 @@
     <img src="images/line.png" class="line">
     <img src="images/line.png" class="line">
     <img src="images/line.png" class="line">
+
+
 
     <!-- ***** script tags **** -->
     <script src="js/main.js"></script>
